@@ -13,7 +13,6 @@ export class CalculatorComponent implements OnInit {
   currentOperandText: string = '';
   previousOperandText: string = '';
   operation: string = '';
-  number = 12;
   afterEqual = false;
 
   handleEqual() {

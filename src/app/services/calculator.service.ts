@@ -31,7 +31,6 @@ export class CalculatorService {
       default:
         return '';
     }
-    console.log(computation);
 
     return parseFloat(computation.toPrecision(6)).toString();
   }
