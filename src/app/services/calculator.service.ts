@@ -7,8 +7,6 @@ export class CalculatorService {
   constructor() {}
 
   compute(currentOperandText: string, previousOperandText: string): string {
-    console.log(currentOperandText, ' ', previousOperandText);
-
     let computation;
     const prev = parseFloat(previousOperandText.split(' ')[0]);
     const operation = previousOperandText.split(' ')[1];
