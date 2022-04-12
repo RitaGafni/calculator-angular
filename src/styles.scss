@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap");
+$color-main: #22577e;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: $color-main;
+}
+
+body {
+  background: linear-gradient(
+      to right bottom,
+      rgba(#8fbdd3, 0.8),
+      rgba(#97dbae, 0.8)
+    ),
+    url("./img/math-background.jpg");
+}

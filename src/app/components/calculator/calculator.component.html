@@ -1,0 +1,27 @@
+<div class="calculator-grid">
+  <div class="output">
+    <app-display
+      currentText="{{ currentOperandText }}"
+      previousText="{{ previousOperandText }}"
+    >
+    </app-display>
+  </div>
+  <app-key text="AC" class="span-two" (btnClick)="handleAllClear()"></app-key>
+  <app-key text="DEL" (btnClick)="handleDelete()"></app-key>
+  <app-key text="/" (btnClick)="handleOperationClick('/')"></app-key>
+  <app-key text="1" (btnClick)="handleKeyClick('1')"></app-key>
+  <app-key text="2" (btnClick)="handleKeyClick('2')"></app-key>
+  <app-key text="3" (btnClick)="handleKeyClick('3')"></app-key>
+  <app-key text="*" (btnClick)="handleOperationClick('*')"></app-key>
+  <app-key text="4" (btnClick)="handleKeyClick('4')"></app-key>
+  <app-key text="5" (btnClick)="handleKeyClick('5')"></app-key>
+  <app-key text="6" (btnClick)="handleKeyClick('6')"></app-key>
+  <app-key text="+" (btnClick)="handleOperationClick('+')"></app-key>
+  <app-key text="7" (btnClick)="handleKeyClick('7')"></app-key>
+  <app-key text="8" (btnClick)="handleKeyClick('8')"></app-key>
+  <app-key text="9" (btnClick)="handleKeyClick('9')"></app-key>
+  <app-key text="-" (btnClick)="handleOperationClick('-')"></app-key>
+  <app-key text="." (btnClick)="handleKeyClick('.')"></app-key>
+  <app-key text="0" (btnClick)="handleKeyClick('0')"></app-key>
+  <app-key text="=" (btnClick)="handleEqual()" class="span-two"></app-key>
+</div>
